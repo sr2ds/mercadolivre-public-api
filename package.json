@@ -1,6 +1,6 @@
 {
     "name": "mercadolivre-public-api",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "API para consultas publicas do Mercado Livre",
     "main": "index.js",
     "scripts": {
