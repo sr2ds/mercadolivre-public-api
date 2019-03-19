@@ -13,12 +13,23 @@ import axios from 'axios'
  * TODO: 
  *  Permitir seller_id como parâmetro
  */
-const DEFAULT = {
+
+var DEFAULT = {
+    seller_id: '130052616',
     url: 'https://api.mercadolibre.com/sites/MLB/search',
-    seller_id: '130052616'
 };
 
 const mercadolivre = {
+
+    /**
+     *  Define o seller_id para consulta de itens
+     * @param {integer} seller_id 
+     */
+    setSellerId(seller_id) {
+        DEFAULT = {
+            seller_id: seller_id ? seller_id : `130052616`
+        }
+    },
 
     /**
      * Retorna o total de itens ativos que o vendedor publicou

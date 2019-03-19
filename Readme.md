@@ -10,6 +10,11 @@ Consultas básicas do Mercado Livre <br>
 
 ## Como utilizar 
 
+### Define o sellerId
+```
+mercadolivre.setSellerId(seller_id)
+```
+
 ### Retorna total de itens
 ```
 let total = await mercadolivre.getTotalItens()
